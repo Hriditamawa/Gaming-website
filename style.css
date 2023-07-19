@@ -4,10 +4,65 @@
 font-family: 'Work Sans' 
 }
 /* shared style */
-.part2 , .part3 , .part4 , .part5 , .part6{
-    padding-left: ;
-    padding-right: ;
+
+
+
+/* part1 start from here  */
+
+.color{
+    
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px 20px 150px;
+    background-color: rgb(254, 249, 249);
+}
+
+.logo-container{
+    display: flex;
+    font-size: large;
+}
+.logo-container img{
+width: 30px;
+height: 20px;
+align-items: center;
+padding-top: 18px;
+padding-right: 10px;
+
+}
+.nav-items-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    color: #0B0223;
+    font-size: 13px;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 10px 20px 10px 20px;
+
+}
+
+.icon img{
+    height: 15px;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+
 
 /* part2 start from here */
 
@@ -21,18 +76,31 @@ font-family: 'Work Sans'
     justify-content: center;
     align-items: center;
     padding-left: 150px;
-    color: #534C64;
-    /* margin-right: 50px; */
+    padding-right: 150px;
+    color: #0B0223;
+    background-image:url(./Group\ 14.png);
+
+    
+}
+.description{
+    color: #47464a;
+text-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .bold{
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom:200px ;
 }
+
+    
 .btn1{
     border-radius: 28px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -55,11 +123,134 @@ background-clip: text;
 .img1{
     width: 60%;
     padding-left: 140px;
-
-/* part3 start from here */
 }
 .img{
     justify-content: center;
     width: 700px;
     height: 400px;
+}
+
+/* part3 start from here  */
+
+.part3{
+    padding:100px 150px;
+}
+.funny-videos{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.videos{
+    display:grid;
+}
+.videos img{
+    height: 100px;
+}
+
+.video-title{
+    text-align: center;
+}
+/* part4 start from here  */
+
+.part4{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.clr{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* .pic1{
+    height: 100px;
+    width: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    size: 100px; */
+}
+/* part5 start from here  */
+.part5{
+padding-top: 100px;
+}
+
+.game1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    p
+    gap: 20px;
+    font-size: 15px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+.games{
+        display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px; 
+    background-color: white;
+}
+.games img{
+    width: 30px;
+    height: 30px;
+}
+
+/* footer section start from here  */
+
+.footer{
+    background-color: black;
+    padding-top:50px ;
+    padding-bottom:50px ;
+
+}
+.footer-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.footer-head img{
+width: 30px;
+height: 20px;
+}
+.footer-description1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+.footer-description2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-description2 img{
+    width: 20px;
+height: 20px;
+
+}
+
+.footer-description3{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: #858488;
+}
+.end{
+    color:#858488;
+    padding-left: 400px;
 }
