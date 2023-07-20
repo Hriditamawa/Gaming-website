@@ -77,8 +77,6 @@ padding: 10px 20px 10px 20px;
     
 }
 .banner-description{
-    justify-content: center;
-    align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 150px;
@@ -129,6 +127,7 @@ line-height: normal;
 .img1{
     width: 60%;
     padding-left: 150px;
+    
 }
 .img{
     width: 800px;
@@ -136,9 +135,18 @@ line-height: normal;
 }
 
 /* part3 start from here  */
-
 .part3{
-    padding:50px 150px;
+    padding: 30px 0px;
+}
+.card-title{
+    text-align: center;
+    padding-top: 50px; 
+    font-size: 20px;
+}
+.card-title p{
+    color: #534C64;
+    padding-top: 13px;
+    font-size: 12px;
 }
 .funny-videos{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -146,27 +154,78 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-.videos{
-    display:grid;
+ .card-container{
+    display: flex;
+    gap: 30px;
+    padding-top:80px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
-.videos img{
-    height: 100px;
+.card{
+    /* height: 260px; */
+    cursor: pointer;
+    transition: border 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    }
+.card-img{
+    max-height: 260px;
 }
 
-.video-title{
-    text-align: center;
-    padding-bottom: 30px;
-    
+.hover-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        transition: opacity 0.3s ease;
+        
+        
+      }
+      
+.card:hover .hover-content {
+        opacity: 2;
+        visibility: visible;
+      }
+.hover img {
+        width: 40px; 
+      }
+
+.hover-content p {
+        font-size: 16px;
+        font-weight: bold;
+        background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+.card img:hover{
+    border: 2px ;
+    border-radius: 13px;
+    border: 3px solid #FF42A5;
+    opacity:.4;
 }
+
+.card-container p{
+    font-size: 12px;
+    padding-top: 10px;
+    color: #5f5454;
+}
+
 /* part4 start from here  */
 
 .part4{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    align-items: center;
+    gap: 160px;
     margin-top: 80px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 50px;
 }
 .clr{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -174,13 +233,32 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-/* .pic1{
-    height: 100px;
-    width: 100px;
-    padding-right: 100px;
-    margin-bottom: 50px;
-    size: 100px; */
+.part4 p{
+    font-size:13px ;
+    color:#666173 ;
+    padding-top: 15px;
 }
+
+
+
+ .pic1{
+    position: relative;
+} 
+.pic1 img{
+    height: 400px;
+}
+.pic2{
+    position: absolute;
+    top: 1390px;
+    left: 480px;
+    margin: 0 auto;
+}
+.pic2 img{
+    height: 200px;
+}
+
+
+
 /* part5 start from here  */
 .part5{
 padding-top: 100px;
@@ -194,6 +272,7 @@ padding-top: 100px;
     gap: 20px;
     font-size: 15px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    
 }
 .game2{
     display: flex;
@@ -212,8 +291,18 @@ padding-top: 100px;
     gap: 8px;
     border-radius: 50px; 
     background-color: white;
-    
+    cursor: pointer;
+    transition: border 0.3s ease;
 }
+
+.games:hover{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+border: 2px solid #FF42A5;
+}
+
 .games img{
     width: 30px;
     height: 30px;
