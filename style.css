@@ -3,9 +3,9 @@
 *{
 font-family: 'Work Sans' 
 }
-/* shared style */
-
-
+*{
+    margin: 0;
+}
 
 /* part1 start from here  */
 
@@ -20,19 +20,24 @@ background-clip: text;
 .nav-container{
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px 20px 150px;
-    background-color: rgb(254, 249, 249);
+    padding: 15px 150px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    
 }
-
+.nav-items-container a{
+    text-decoration: none;
+    color: #3C354F;
+}
 .logo-container{
     display: flex;
+    align-items: center;
     font-size: large;
 }
 .logo-container img{
 width: 30px;
 height: 20px;
 align-items: center;
-padding-top: 18px;
 padding-right: 10px;
 
 }
@@ -68,23 +73,24 @@ padding: 10px 20px 10px 20px;
 
 .part2{
     display: flex;
-    justify-content:space-between;
     align-items: center;
-
+    
 }
 .banner-description{
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-left: 150px;
     padding-right: 150px;
     color: #0B0223;
     background-image:url(./Group\ 14.png);
+    background-size: 100% ;
 
     
 }
 .description{
     color: #47464a;
-text-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -122,18 +128,17 @@ line-height: normal;
 }
 .img1{
     width: 60%;
-    padding-left: 140px;
+    padding-left: 150px;
 }
 .img{
-    justify-content: center;
-    width: 700px;
+    width: 800px;
     height: 400px;
 }
 
 /* part3 start from here  */
 
 .part3{
-    padding:100px 150px;
+    padding:50px 150px;
 }
 .funny-videos{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -150,6 +155,8 @@ background-clip: text;
 
 .video-title{
     text-align: center;
+    padding-bottom: 30px;
+    
 }
 /* part4 start from here  */
 
@@ -179,11 +186,19 @@ background-clip: text;
 padding-top: 100px;
 }
 
-.game1 {
+.game1  {
     display: flex;
     justify-content: center;
-    padding-bottom: 0px;
-    p
+    padding-bottom: 20px;
+    padding-top: 100px;
+    gap: 20px;
+    font-size: 15px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.game2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
     gap: 20px;
     font-size: 15px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -197,6 +212,7 @@ padding-top: 100px;
     gap: 8px;
     border-radius: 50px; 
     background-color: white;
+    
 }
 .games img{
     width: 30px;
@@ -228,6 +244,8 @@ height: 20px;
     align-items: center;
     gap: 50px;
     color: white;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .footer-description2{
@@ -249,8 +267,10 @@ height: 20px;
     justify-content: center;
     gap: 50px;
     color: #858488;
+    padding-top:25px;
 }
 .end{
     color:#858488;
     padding-left: 400px;
+    padding-top: 15px;
 }
